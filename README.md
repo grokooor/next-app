@@ -35,6 +35,9 @@ src
 
 ## player
 
+![Alt](https://github.com/jacob30/gh-assets/blob/main/youtube-player-next-02.png)
+_Screenshot of the feature_
+
 I wanted to use the Youtube [Clips](https://riverside.fm/blog/youtube-clips) playlist from my Youtube channel to demonstrate that I can build a web application that consumes an external API, in this case Youtube API V3, and I wanted to provide some videos to give context on things I'm interested in.
 
 I reviewed the most popular React Youtube player packages on npm by searching with the keywords `youtube video player next`:
@@ -51,7 +54,7 @@ I reviewed the most popular React Youtube player packages on npm by searching wi
 YouTube Clips are 5-60 second clips that viewers or content creators can clip from any YouTube video. They are differentiated from Youtube Videos by their `clipId` and `clipt` (clip time). For example: `https://www.youtube.com/embed/X-Sb8sIi22g?clip=Ugkx2wj2Cun8N7m2GQ7IOabDUmCEG6O35_x5&amp;clipt=ENSd5wEY2OzoAQ`.
 
 ![Alt](https://github.com/jacob30/gh-assets/blob/main/youtube-player-next-01.png)
-_A Youtube Clip_
+_A Youtube Clip URL_
 
 Features of the various npm packages included convenience functions such as url playback, playback event bindings and customisable player options but none of them included the clip and clipt params. It also seemed unnecessary to add another package dependency. My `player` component uses the [Youtube iFrame Player](https://developers.google.com/youtube/iframe_api_reference).
 
