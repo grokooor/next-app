@@ -35,7 +35,7 @@ src
 
 ## player
 
-I wanted to use the Youtube (Clips)[https://riverside.fm/blog/youtube-clips] playlist from my Youtube channel to demonstrate that I can build a web application that consumes an external API, in this case Youtube API V3, and I wanted to provide some videos to give context on things I'm interested in.
+I wanted to use the Youtube [Clips](https://riverside.fm/blog/youtube-clips) playlist from my Youtube channel to demonstrate that I can build a web application that consumes an external API, in this case Youtube API V3, and I wanted to provide some videos to give context on things I'm interested in.
 
 I reviewed the most popular React Youtube player packages on npm by searching with the keywords `youtube video player next`:
 
@@ -51,9 +51,9 @@ I reviewed the most popular React Youtube player packages on npm by searching wi
 YouTube Clips are 5-60 second clips that viewers or content creators can clip from any YouTube video. They are differentiated from Youtube Videos by their `clipId` and `clipt` (clip time). For example: `https://www.youtube.com/embed/X-Sb8sIi22g?clip=Ugkx2wj2Cun8N7m2GQ7IOabDUmCEG6O35_x5&amp;clipt=ENSd5wEY2OzoAQ`.
 
 ![Alt](https://github.com/jacob30/gh-assets/blob/main/youtube-player-next-01.png)
-_image title_
+_A Youtube Clip_
 
-Features of the various npm packages included convenience functions such as url playback, playback event bindings and customisable player options but none of them included the clip and clipt params. It also seemed unnecessary to add another package dependency. My `player` component uses the (Youtube iFrame Player)[https://developers.google.com/youtube/iframe_api_reference].
+Features of the various npm packages included convenience functions such as url playback, playback event bindings and customisable player options but none of them included the clip and clipt params. It also seemed unnecessary to add another package dependency. My `player` component uses the [Youtube iFrame Player](https://developers.google.com/youtube/iframe_api_reference).
 
 # local development
 
@@ -73,7 +73,7 @@ NODE_ENV=development bun dev
 Use a local folder name that matches the one in npm_modules.. otherwise you'll get "Module not found: Can't resolve 'npmpackagepath'"
 
 ```
-npm install --save npmpackagepath`
+npm install --save npmpackagepath
 ```
 
 ## .env.development
@@ -85,7 +85,6 @@ If you have access to the vercel project you can `vercel link` and `vercel pull 
 NEXTAUTH_URL=http://localhost:3000
 LOCAL_URL=http://localhost:3000
 AUTH_TRUST_HOST=http://localhost:3000
-# NEXTAUTH_URL=http://192.152.1.1:3000
 WS_PROXY_PORT=4444
 HELIUS_API_KEY=YOUR_KEY_TO_ACCESS_HELIUS
 API_KEY=YOUR_KEY_TO_ACCESS_YOUTUBE_API_V3
@@ -138,3 +137,8 @@ git ...
 ## database
 
 See [NeonDB console](https://console.neon.tech/app/).
+
+# related content
+
+- [How to migrate Pages to App Router](https://dev.to/jacob30/pages-to-app-router-2a81-temp-slug-181571).
+- [How to alphabetize your import statements in React files and package.json](https://dev.to/jacob30/how-to-alphabetize-your-import-statements-in-react-files-and-packagejson-p5).
