@@ -43,9 +43,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex min-h-screen flex-col items-center md:p-24 p-4 w-full">
+          <main className="flex min-h-screen flex-col items-center md:p-24 p-4 w-full  max-w-[1080px] m-auto">
             <Accordion />
-            <div className="w-full pt-4 mt-16 sm:mt-32 content-center space-y-4">
+            <div className="w-full pt-4 content-center space-y-4">
+              {/* mt-16 sm:mt-32 */}
               {children}
             </div>
           </main>
