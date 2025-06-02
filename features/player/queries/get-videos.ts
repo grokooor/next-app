@@ -8,7 +8,7 @@ export type TIds = Array<string | null> | null | undefined;
 
 const getVideos = async (ids?:TIds) => {
     try {
-        if (ids) {
+        if (ids && ids.length>0) {
             const filteredIds = ids.filter(i => !!i)
             const mappedIds = filteredIds.map(i => i!.toString())
             const items = await db.select().from(videosTable).where(inArray(videosTable.id, mappedIds));

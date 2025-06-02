@@ -1,7 +1,6 @@
 # hi there
 
 [full demo](https://slvr.mn).
-[minimal demo]().
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). There are individual feature branches and then a staging and deployment branch that combines the features.
 

@@ -1,6 +1,6 @@
 "use server";
 
-import { drizzleClientWs as db } from "@/db/drizzle.server";
+import { drizzleClientHttp as db } from "@/db/drizzle.server";
 import { tagsTable } from "@/db/schema";
 
 const getTags = async () => {

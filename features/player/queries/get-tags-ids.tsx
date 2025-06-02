@@ -1,7 +1,7 @@
 "use server";
 import { eq } from "drizzle-orm";
 
-import { drizzleClientWs as db } from "@/db/drizzle.server";
+import { drizzleClientHttp as db } from "@/db/drizzle.server";
 import { tagsTable } from "@/db/schema";
 
 export type TQuery = string | undefined;
