@@ -24,7 +24,7 @@ const Card = ({
   footer,
 }: CardCompactProps) => {
   return (
-    <ShadcnCard className={cn("w-full max-w-[840px] self-center", className)}>
+    <ShadcnCard className={cn("w-full self-center", className)}>
       {title || description ? (
         <CardHeader>
           {title ? <CardTitle>{title}</CardTitle> : null}

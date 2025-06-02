@@ -10,6 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { buttonVariants } from "@/components/ui/button";
+import { SignOut } from "@/features/auth/components/button";
 import ModeToggle from "@/features/dark-mode/components/toggle";
 import { cn } from "@/lib/utils";
 
@@ -22,6 +23,11 @@ export const mycomponents: {
     title: "Player Demo",
     href: "/player",
     description: `A Youtube Video Player Component Demo.`,
+  },
+  {
+    title: "Authentication",
+    href: "/auth",
+    description: `A Authentication Component Demo.`,
   },
 ];
 
@@ -105,6 +111,7 @@ export function Accordion() {
             </div>
 
             <div className="flex gap-2 md:gap-4 justify-end">
+              <SignOut />
               <ModeToggle />
             </div>
           </div>

@@ -21,6 +21,7 @@ export default function Home() {
             priority
           />
         }
+        className="w-fit"
       />
     </section>
   );

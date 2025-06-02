@@ -37,7 +37,7 @@ src
 
 ## auth
 
-![Alt](https://github.com/jacob30/gh-assets/blob/main/next-app-auth-01.png)
+![Alt](https://github.com/jacob30/gh-assets/blob/main/next-app-auth-02.gif)
 _Login button with Captcha_
 
 I have implemented AuthJS Login using the Twitter/X Provider including a Cloudflare Turnstile Captcha.

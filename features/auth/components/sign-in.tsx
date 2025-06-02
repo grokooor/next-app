@@ -1,18 +1,19 @@
 "use client";
 
-import { useSession } from "next-auth/react";
+import Script from "next/script";
+import { signIn } from "next-auth/react";
 import { useActionState, useState } from "react";
 import React from "react";
+
 import { FieldError } from "@/components/form/field-error";
 import { Form } from "@/components/form/form";
-import { SubmitButton } from "@/components/form/submit-button";
-import { EMPTY_ACTION_STATE } from "@/components/form/utils/to-action-state";
-import { upsertUser } from "../actions/upsert-user";
-import Script from "next/script";
 // import { LucideLoaderCircle } from "lucide-react";
 // import { Button } from "@/components/ui/button";
 import { useActionFeedback } from "@/components/form/hooks/use-action-feedback";
-import { signIn } from "next-auth/react";
+import { SubmitButton } from "@/components/form/submit-button";
+import { EMPTY_ACTION_STATE } from "@/components/form/utils/to-action-state";
+
+import { upsertUser } from "../actions/upsert-user";
 // type SignInFormProps = {};
 
 const SignInForm = () => {
@@ -51,7 +52,7 @@ const SignInForm = () => {
 
   return (
     <>
-      <Form action={action} actionState={actionState} className="min-w-[300px]">
+      <Form action={action} actionState={actionState} className="">
         {/* Embed Turnstile library */}
         <Script
           src="https://challenges.cloudflare.com/turnstile/v0/api.js"
