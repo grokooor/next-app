@@ -8,7 +8,6 @@ export default defineConfig({
       verbose: true,
       strict: true,
   dbCredentials: {
-        // todo: switch for prod/dev
         url: process.env.DATABASE_URL!
         }
     });;

@@ -3,7 +3,7 @@ import "@/app/globals.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
-import { ThemeProvider } from "@/app/providers";
+import { NextAuthProvider, ThemeProvider } from "@/app/providers";
 import { Accordion } from "@/features/accordion/components/accordion";
 import { cn } from "@/lib/utils";
 
@@ -43,13 +43,15 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex min-h-screen flex-col items-center md:p-24 p-4 w-full  max-w-[1080px] m-auto">
-            <Accordion />
-            <div className="w-full pt-4 content-center space-y-4">
-              {/* mt-16 sm:mt-32 */}
-              {children}
-            </div>
-          </main>
+          <NextAuthProvider>
+            <main className="flex min-h-screen flex-col items-center md:p-24 p-4 w-full  max-w-[1080px] m-auto">
+              <Accordion />
+              <div className="w-full pt-4 content-center space-y-4">
+                {/* mt-16 sm:mt-32 */}
+                {children}
+              </div>
+            </main>
+          </NextAuthProvider>
         </ThemeProvider>
       </body>
     </html>

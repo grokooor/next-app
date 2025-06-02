@@ -4,13 +4,12 @@ import { useEffect, useState } from "react";
 
 import { videosTable } from "@/db/schema";
 import Player from "@/features/player/components/player";
-import { getTagIds } from "@/features/player/queries/get-tags-ids";
 import { getVideos } from "@/features/player/queries/get-videos";
 
 export type DB_Videos = typeof videosTable.$inferSelect;
 export type TContent = Array<DB_Videos> | undefined;
 
-export default function Curated() {
+export default function Page() {
   const [content, setContent] = useState<TContent>(undefined);
   useEffect(() => {
     (async () => {
