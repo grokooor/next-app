@@ -35,6 +35,13 @@ src
 
 # feature branches
 
+## auth
+
+![Alt](https://github.com/jacob30/gh-assets/blob/main/next-app-auth-01.png)
+_Login button with Captcha_
+
+I have implemented AuthJS Login using the Twitter/X Provider including a Cloudflare Turnstile Captcha.
+
 ## drizzle (with neondb & postgres)
 
 ![Alt](https://github.com/jacob30/gh-assets/blob/main/next-app-drizzle-01.png)
